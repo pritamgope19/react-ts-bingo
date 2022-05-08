@@ -1,0 +1,73 @@
+h1 {
+  font-size: 50px;
+}
+p {
+  font-family: Lato;
+}
+.cell {
+  width: 10rem;
+  height: 10rem;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+@media (min-width: 1024px) {
+  .bingo-cards {
+    height: 850px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bingo-cards {
+    height: 800px;
+  }
+}
+@media (min-width: 600px) {
+  .bingo-cards {
+    height: 450px;
+  }
+}
+@media (min-width: 768px) {
+  .bingo-container {
+    max-width: 800px;
+  }
+}
+.bingo-container {
+  max-width: 1080px;
+}
+.bingo-cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  height: fit-content;
+  min-height: 850px;
+}
+.bingo-card {
+  border: 0.6px solid;
+  height: auto;
+  position: relative;
+  transition: all 0.4s ease;
+}
+.outter {
+  background-color: rgb(238, 238, 238);
+  color: rgb(0, 0, 0);
+  border-color: rgb(208, 207, 207);
+}
+.selection {
+  background-color: rgb(228, 0, 117);
+  color: rgb(255, 255, 255);
+  border-color: rgb(208, 207, 207);
+}
+.bingo-card__wr {
+  align-items: center;
+  display: grid;
+  height: 100%;
+  width: 100%;
+}
+.bingo-card__content {
+  text-align: center;
+  width: 100%;
+}
+.text-content {
+  font-size: 16px;
+}
